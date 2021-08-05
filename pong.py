@@ -19,7 +19,7 @@ def update():
 			dx=uniform(-1,1)/10
 			dx=dx*-1
 			dy=dy*-1
-			Audio('audio/General Sounds/Menu Sounds/sfx_menu_move1.wav')
+			Audio('audio/sfx_menu_move1.wav')
 			ball.color = color.rgb(randint(0,255),randint(0,255),randint(0,255))
 
 
@@ -27,10 +27,10 @@ def update():
 		#print(ball.position)
 		if abs(ball.x)>6.9:
 			dx=dx*-1
-			Audio('audio/General Sounds/Menu Sounds/sfx_menu_move4.wav')
+			Audio('audio/sfx_menu_move4.wav')
 		if abs(ball.y)>4:
 			dy=dy*-1
-			Audio('audio/General Sounds/Menu Sounds/sfx_menu_move4.wav')
+			Audio('audio/sfx_menu_move4.wav')
 		if ball.x>player2.x:
 				player2.x+=4*time.dt
 		if ball.x<player2.x:
